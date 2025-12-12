@@ -1,0 +1,7 @@
+services:
+    sdeller.action.factory:
+      class: sdeller\CrudBundle\Crud\ActionFactory
+      public: true
+      arguments:
+        - '@validator'
+    sdeller\CrudBundle\Crud\ActionFactoryInterface: '@sdeller.action.factory'
